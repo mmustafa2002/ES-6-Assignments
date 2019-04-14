@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    var word= prompt("Enter ANY Word")
+    var palindromearr=[];
+    for(var i=0 ; i<= word.length ; i++){
+        for (var j=1; j<=word.length ; j++){
+            if(word[i]==word[j]){
+                if(i!=j && i < j){ 
+                var palindrome = word.slice(i,(j+1))
+                var checkplindrome= palindrome.split("").reverse("").join("")
+            
+                if (palindrome==checkplindrome){
+                    palindromearr.push(palindrome)
+                    
+                    if(i==word.length){
+                        console.log(palindromearr)
+                    }
+                }
+                
+                }
+            }
+        }
+    }
+    
+</script>
+<body>
+    
+</body>
+</html>
