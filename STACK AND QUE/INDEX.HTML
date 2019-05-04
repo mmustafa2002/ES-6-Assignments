@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    function Stack(arr){
+    this.push = function (num){
+    arr.push(num)
+    }
+    this.pop = function (num){
+    arr.pop(num)
+    }
+    this.show = function (arr){
+    console.log(arr)
+    }
+    }
+    function Que(arr){
+        this.dq = function(num){
+            arr.shift(num)
+        }
+        this.enq = function(num){
+            arr.unshift(num)
+        }
+        this.show = function(arr){
+            console.log(arr)
+        }
+    }
+    function Multiplied(arr){
+        this.multiplyByTwo = function(){
+            arr.map(function(item){
+            return item*2
+        })
+        }
+    }
+
+
+
+
+
+</script>
+<body>
+    
+</body>
+</html>

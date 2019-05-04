@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var arr1 = [1,2,3,44,0,5]
+    
+    function search(a,b){
+        var x=0;
+        if(arr1.indexOf(a)>-1){
+            x++;}
+        if(arr1.indexOf(b)>-1){
+            x=x+2
+        }
+        switch(x){
+         case 3:
+            text="Both Found"
+         break;
+         
+         case 2:
+            text= b+" is found"
+            break;
+        case 1: 
+            text= a + " is found"
+            break;
+        default: 
+            text= "Not found"
+         }
+         return text
+
+}
+      
+    console.log(search(1,44))
+    console.log(search(1,15))
+    console.log(search(15,5))
+    console.log(search(10,15))
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>
